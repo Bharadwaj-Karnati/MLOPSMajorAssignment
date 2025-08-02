@@ -1,0 +1,9 @@
+numpy
+matplotlib
+statsmodels
+scikit-learn
+pandas
+scipy
+statsmodels
+joblib
+pytest
