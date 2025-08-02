@@ -1,6 +1,8 @@
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.utils import load_data
 
@@ -31,3 +33,4 @@ def test_r2_score_above_threshold():
     r2 = r2_score(y_test, y_pred)
     threshold = 0.5
     assert r2 > threshold, f"R2 score {r2:.2f} is below threshold {threshold}"
+
